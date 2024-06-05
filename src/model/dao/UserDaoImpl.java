@@ -7,8 +7,14 @@ import java.util.List;
 public class UserDaoImpl implements UserDao{
     private List<User> userList = new ArrayList<>(
             List.of(new User(1,"KoKo","koko123@gmail.com"),
-                    new User(2,"KaKa","kaka123@gmail.com"))
+                    new User(2,"KaKa","kaka123@gmail.com"),
+                    new User(3,"NaNa","NaNa123@gmail.com"),
+                    new User(4,"Minea","Miea123@gmail.com"))
     );
+
+    public void removeUser(User user){
+        
+    }
     @Override
     public void addNewUser(User user) {
         userList.add(user);
